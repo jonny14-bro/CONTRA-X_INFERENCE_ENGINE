@@ -1,0 +1,23 @@
+Q6 REAL WORKLOAD BENCHMARK
+Run: run_20261120_210022
+Mode: --all
+Date: 2026-11-20T21:00:22+05:30
+Threads: 8
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2)
+Kernel: 7.2.11-200.fc44.x86_64
+Architecture: x86_64
+Git revision: unavailable
+Git status: 0 modified/untracked entries
+Records: 5000
+Weights bytes: 11495159808
+Activations bytes: 375792640
+Descriptors SHA256: f2e418c87cb051ec10071fbf8d343e07c71d5f63edd1508dc0a0602efa482f39
+
+EXECUTABLE HASHES
+61f8b7bd6037d526566088b11b5e517cd0f003c943eaf160966e526aba087585  benchmarks/q6_central/bin/compare_q6_threeway
+d1884f2e79a716fce82f89cf5a2daac83f9dad850fcc1172e9f3a9029ddce230  benchmarks/q6_central/bin/compare_q6_fiveway
+c62412ef33843bb411521b307a0bf6511cb8fa9ddc7ad03b336296a14e651bb6  benchmarks/q6_central/bin/diagnose_q8g16_dataset_weighted_error
+
+Completed: 2026-11-20T21:00:33+05:30
+Status: PASS
+Report directory: benchmarks/q6_central/reports/real_workload/run_20261120_210022

@@ -1,0 +1,33 @@
+{
+  "experiment": "python_algorithmic_problem_solving_distinct_suites",
+  "category": "algorithmic-problem-solving",
+  "suite_count": 5,
+  "prompts_per_suite": 7,
+  "suites": {
+    "a": {
+      "file": "pwea/prompts/python_algorithmic_problem_solving_suite_a.txt",
+      "prompt_count": 7,
+      "sha256": "692c65d4a0940c7ef14b5394584ea709e0b3a0f416afb0d7bd774cceed46f3f5"
+    },
+    "b": {
+      "file": "pwea/prompts/python_algorithmic_problem_solving_suite_b.txt",
+      "prompt_count": 7,
+      "sha256": "28a5d2fab86479896338bc6c93253e950682a17113f3cf88bdce687c116bcebe"
+    },
+    "c": {
+      "file": "pwea/prompts/python_algorithmic_problem_solving_suite_c.txt",
+      "prompt_count": 7,
+      "sha256": "e31d58ec5b9e182483b2a8d4a19021a3e99f1879c5b0bea64f16ae422cef477b"
+    },
+    "d": {
+      "file": "pwea/prompts/python_algorithmic_problem_solving_suite_d.txt",
+      "prompt_count": 7,
+      "sha256": "beec442d74d067b1ec862b1a809b5766025ec3f1adc5f1a9c53736effcb7b6d7"
+    },
+    "e": {
+      "file": "pwea/prompts/python_algorithmic_problem_solving_suite_e.txt",
+      "prompt_count": 7,
+      "sha256": "87c911aab8c1cd8c9d44650539a226ac30fab47d2b540545f58e3192ed3666ac"
+    }
+  }
+}

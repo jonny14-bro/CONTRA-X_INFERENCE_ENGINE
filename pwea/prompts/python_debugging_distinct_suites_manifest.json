@@ -1,0 +1,33 @@
+{
+  "experiment": "python_debugging_distinct_suites",
+  "created_for": "PWEA cross-workload evaluation",
+  "suite_count": 5,
+  "prompts_per_suite": 7,
+  "suites": {
+    "a": {
+      "file": "pwea/prompts/python_debugging_suite_a.txt",
+      "prompt_count": 7,
+      "sha256": "903c7dab35189b2333fb087cace4652bc2f56e6c58d437b0f242eec69a7fc74b"
+    },
+    "b": {
+      "file": "pwea/prompts/python_debugging_suite_b.txt",
+      "prompt_count": 7,
+      "sha256": "e8f1b95306ca9be64e411a527141647a4fea5c3c1c2e8bfda101a78a2574d437"
+    },
+    "c": {
+      "file": "pwea/prompts/python_debugging_suite_c.txt",
+      "prompt_count": 7,
+      "sha256": "2cd4af755741c928cf2141d0f61e9207e352fe6cf9cec71356184394dbe15885"
+    },
+    "d": {
+      "file": "pwea/prompts/python_debugging_suite_d.txt",
+      "prompt_count": 7,
+      "sha256": "d0f7e3de5dbf6c43fcb5b32381c34f340b4dd9a89ca8a59ca6b0b7be7b7306eb"
+    },
+    "e": {
+      "file": "pwea/prompts/python_debugging_suite_e.txt",
+      "prompt_count": 7,
+      "sha256": "a61799de2461cc184ab6119def14dccd3af554c7075f38c92300c67b07674210"
+    }
+  }
+}

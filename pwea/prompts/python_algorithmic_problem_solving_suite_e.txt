@@ -1,0 +1,7 @@
+Given a list of coin denominations and a target amount, find the minimum number of coins needed to make that amount when each denomination can be used unlimited times. Return -1 if impossible. Explain the dynamic programming recurrence and complexity.
+Given a string, find the length of its longest palindromic subsequence. Explain the dynamic programming state, recurrence, base cases, and time and space complexity.
+Given a list of non-negative integers representing house values arranged in a line, find the maximum amount that can be robbed without selecting adjacent houses. Explain the recurrence and handle empty and single-element inputs.
+Given a set of positive integer task durations and a deadline, select the maximum number of tasks that can be completed when tasks are performed sequentially and cannot be interrupted. Explain a greedy strategy and prove why it works.
+Given a list of activities with start and finish times, select the maximum number of mutually non-overlapping activities. Explain the greedy ordering rule, endpoint convention, and complexity.
+Given a string and a dictionary of valid words, determine whether the string can be segmented into a sequence of dictionary words. Explain the dynamic programming state and recurrence, and analyze complexity.
+Given an array of positive integers and a target sum, determine whether any subset adds exactly to the target. Explain a dynamic programming solution, its base cases, and its time and space complexity.

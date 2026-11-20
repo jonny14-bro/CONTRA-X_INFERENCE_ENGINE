@@ -1,0 +1,33 @@
+{
+  "experiment": "python_code_transformation_distinct_suites",
+  "category": "code-transformation",
+  "suite_count": 5,
+  "prompts_per_suite": 7,
+  "suites": {
+    "a": {
+      "file": "pwea/prompts/python_code_transformation_suite_a.txt",
+      "prompt_count": 7,
+      "sha256": "bfe5072920567bd22c31f0df99ef08015b6a0911583e1789e7c287f5ffdc105c"
+    },
+    "b": {
+      "file": "pwea/prompts/python_code_transformation_suite_b.txt",
+      "prompt_count": 7,
+      "sha256": "29757ef203c52450c4db73260283dd23e3cd8382005814dbfaf6e14bff556bfe"
+    },
+    "c": {
+      "file": "pwea/prompts/python_code_transformation_suite_c.txt",
+      "prompt_count": 7,
+      "sha256": "2dcda0eadb550dbd059f81acdaf385c3a789ab14c1c52b1671e655a16753f7cb"
+    },
+    "d": {
+      "file": "pwea/prompts/python_code_transformation_suite_d.txt",
+      "prompt_count": 7,
+      "sha256": "4da81d046ac9fc28a69a9fa914680eb38760a9a346233a1375ac3b91c6aff715"
+    },
+    "e": {
+      "file": "pwea/prompts/python_code_transformation_suite_e.txt",
+      "prompt_count": 7,
+      "sha256": "a6d370a4e4b32c139ee3d4432a74cb286164c620787b9ae4a0f400e4718f31cb"
+    }
+  }
+}

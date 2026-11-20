@@ -1,0 +1,160 @@
+# ============================================================
+# CONTRAX - GitHub repository exclusions
+# ============================================================
+
+# Compiled executables
+/qwen3moe
+/qwen3moe_cuda
+/test_eahmmf
+/test_pwea_placement
+/test_os_memory_monitor
+/test_ram_budget_manager
+/tiny.gguf
+/test_cuda_dp4a
+/test_cuda_tensor_cores
+
+# Build outputs
+/*.o
+/build/
+/build-cuda/
+/build-cpu-verification/
+/expert_cuda.o
+
+# Benchmark-generated executables and build logs
+/benchmarks/q6_central/benchmark_suite
+/benchmarks/q6_central/bin/
+/benchmarks/q6_central/reports/real_workload/build_logs/
+
+# Repeated raw benchmark logs
+*.log
+/benchmarks/q6_central/reports/*/raw_logs/
+
+# Large captured Q6 datasets (retain locally)
+/benchmarks/real_activation_weight_replay_20261118/weights.bin
+/benchmarks/real_activations_q8k_full_20261118/activations.f32
+/benchmarks/real_activations_q8k/
+/benchmarks/real_activations_q8k_full_20261118/
+
+# PWEA private/raw research data (retain locally)
+/pwea/data/raw_sessions/
+/pwea/data/residency_logs/
+
+# Historical development snapshots and backups
+/backups/
+/historical_snapshot/
+/patch_backups/
+
+# Large comparison experiment output
+/benchmarks/contrax_comparison_20261120_004158/
+/benchmarks/contrax_comparison_20261120_004158.zip
+
+# Model files and generated test fixtures
+*.gguf
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Temporary and editor files
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated PWEA native model (regenerate from the NPZ artifact)
+/pwea/native/models/pwea_model_v1.bin
+
+# Local GitHub preparation and pre-fix backups
+/.gitignore.pre_*
+/*.pre_*
+
+# Local build and verification outputs
+/build-cuda/
+/build-cpu-verification/
+
+# PWEA raw-derived data, local run logs, and unapproved model artifacts
+/pwea/artifacts/prediction/expert_prediction_samples_20261115.jsonl
+/pwea/artifacts/deployment/pwea_model_v1.npz
+/pwea/artifacts/cli_runs/
+
+# Draft README with unapproved release-checklist changes
+/README_EAHMMF_v1.1.0_updated.md
+
+# Local R3 backups and captured executable
+/benchmarks/r3_20261111/*.bak
+/benchmarks/r3_20261111/metadata/*.pre_*
+/benchmarks/r3_20261111/metadata/qwen3moe_cpu_before_cuda
+
+# Full per-record Q6 attribution data (curated summaries are retained)
+/benchmarks/q6_central/reports/real_workload/run_20261120_210022/attribution/record_summary.tsv
+/benchmarks/q6_central/reports/real_workload/run_20261120_210022/attribution_previous/
+
+# Local PWEA experiment configurations (session IDs and machine-specific paths)
+/pwea/configs/
+
+# Superseded PWEA prompt versions and prompt-suite backups
+/pwea/prompts/backups/
+/pwea/prompts/python_debugging_v1.txt
+/pwea/prompts/python_debugging_v2.txt
+# Private machine-specific kernel telemetry
+/benchmarks/kernel_feedback/*.jsonl
+/benchmarks/kernel_feedback/*.log
+# Raw R3 trial output; publish only the sanitized aggregate
+/benchmarks/r3_20261111/results.jsonl
+# Private PWEA session-level evaluation and provenance artifacts
+/pwea/artifacts/loco_*
+/pwea/artifacts/*evaluation*.json
+/pwea/artifacts/*run_summary*.json
+/pwea/artifacts/*checksums*.sha256
+/pwea/artifacts/*manifest*.json
+/pwea/artifacts/experiment_manifest_*.json
+/pwea/artifacts/prediction/expert_prediction_samples_*.jsonl
+/pwea/artifacts/prediction/outer_evaluation_*.json
+/pwea/native/models/*manifest*.json
+
+# Private benchmark run outputs — retain locally
+/benchmarks/allocator_ab_20261116/
+/benchmarks/benchmark_residency/*.txt
+/benchmarks/q6_full_inference_20261119/
+/benchmarks/r3_20261111/failed_attempts/
+/benchmarks/r3_20261111/metadata/
+/benchmarks/r3_20261111/trials/
+/benchmarks/r3_20261111/warmup/
+/benchmarks/r3_20261111/SHA256SUMS
+/benchmarks/r3_20261111/run_benchmarks.py.pre_*
+/benchmarks/r4_20261111/general_kernel/
+/benchmarks/r4_20261111/warp_kernel/
+/benchmarks/r4_20261111/paired_kernel/
+/benchmarks/r4_20261111/paired_kernel_repeat/
+/benchmarks/r4_20261111/SHA256SUMS
+/benchmarks/r4_20261111/R4_CUDA_Correctness_Report.md.sha256
+/benchmarks/r5_diagnostic_20261111/
+/benchmarks/ram_budget_altpattern_20261118_01/
+/benchmarks/ram_budget_live_20261118_01/
+/benchmarks/ram_budget_lowload_20261118_01/
+/benchmarks/ram_budget_repeat_20261118_01/
+
+# Additional machine-specific raw outputs — retain locally
+/benchmarks/cuda_q6_build_20261119/cuda_smoke_20261119/
+/benchmarks/generation_diagnosis_20261118/ram_profile_01/
+/benchmarks/generation_diagnosis_20261118/ssd_profile_01/
+/benchmarks/generation_diagnosis_20261118/ssd_profile_02/
+/benchmarks/os_memory/*.jsonl
+/benchmarks/placement_effectiveness/cpu_compute_ablation_20261117/*.bak
+/benchmarks/q6_python_quality_20261120/*.time
+/benchmarks/q6_real_python_20261120/*.time
+/benchmarks/q8k_real_weights_20261118/manifest.json
+/benchmarks/ram_budget_live_20261118_0950/
+/benchmarks/ram_budget_live_pressure_20261118_01/
+/benchmarks/ram_budget_repeat_live_20261118_02/
+/benchmarks/real_model_cpu_20261118/
+/benchmarks/real_model_cuda_20261118/

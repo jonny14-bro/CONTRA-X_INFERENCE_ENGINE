@@ -1,0 +1,7 @@
+Explain how list slicing works in this function. Trace every intermediate slice for data=[10,20,30,40,50]: def select(data): return data[1:4:2], data[::-1], data[:3].
+Explain how dictionary insertion and lookup work in this function. Interpret each \n as a real line break in the Python code: def frequencies(items):\n    counts = {}\n    for item in items:\n        counts[item] = counts.get(item, 0) + 1\n    return counts\n[END CODE]. Trace it for ['a','b','a','c','b','a'].
+Explain the difference between a list and a set using this function: def inspect(items): return len(items), len(set(items)), set(items). Trace it for [2,2,3,2,4,3].
+Explain how tuple unpacking works in this function and what happens when the number of values does not match: def describe(record): name, age, city = record; return f'{name} is {age} from {city}'.
+Explain how this nested dictionary is accessed and how the get method behaves: def score(data, user): return data.get(user, {}).get('scores', {}).get('math', 0). Trace it with a present user, a missing user, and a user without math.
+Explain how list aliasing works here and why the two printed lists have their resulting values: def change(items): other=items; other.append(9); return items, other. Use items=[1,2].
+Explain the difference between shallow copying and nested object sharing using this example: def change(data): copied=data.copy(); copied['settings']['theme']='dark'; return data, copied. Trace the references involved.

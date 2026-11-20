@@ -1,0 +1,1176 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "mode": "--full",
+    "timestamp": "20261120_191240",
+    "os": "Linux",
+    "kernel": "7.2.11-200.fc44.x86_64",
+    "machine": "x86_64",
+    "architecture": "x86_64",
+    "cpu_model": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "compiler": "16.2.1 20260819 (Red Hat 16.2.1-2)",
+    "cpp_standard": "C++17",
+    "build_flags": "-std=c++17 -O2 -Wall -Wextra -pedantic",
+    "git_revision": "unavailable",
+    "git_worktree": "unavailable"
+  },
+  "summary": {
+    "total_tests": 9,
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "total_duration_ms": 380.144
+  },
+  "tests": [
+    {
+      "name": "integrated_q6_kernel",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 21.184,
+      "metrics": [
+        {
+          "name": "avx_vnni_available",
+          "value": "yes",
+          "numeric": false,
+          "unit": "",
+          "source_line": "AVX-VNNI available: yes"
+        },
+        {
+          "name": "randomized_blocks",
+          "value": 10000,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Randomized blocks: 10000"
+        },
+        {
+          "name": "q8_scale_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Q8 scale mismatches: 0"
+        },
+        {
+          "name": "q8_value_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Q8 value mismatches: 0"
+        },
+        {
+          "name": "q8_subgroup_sum_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Q8 subgroup-sum mismatches: 0"
+        },
+        {
+          "name": "q6_dot_mismatches_2e_5",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Q6 dot mismatches (>2e-5): 0"
+        },
+        {
+          "name": "nonfinite_results",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Nonfinite results: 0"
+        },
+        {
+          "name": "maximum_absolute_dot_difference",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Maximum absolute dot difference: 0"
+        },
+        {
+          "name": "integrated_q6_kernel",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "INTEGRATED Q6 KERNEL: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_checked",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.185,
+      "metrics": [
+        {
+          "name": "all_zero_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "all_zero               scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "all_zero_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "all_zero               scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "all_zero_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "all_zero               scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "normal_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "normal                 scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "normal_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "normal                 scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "normal_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "normal                 scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "tiny_normal_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "tiny_normal            scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "tiny_normal_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "tiny_normal            scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "tiny_normal_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "tiny_normal            scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "large_finite_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "large_finite           scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "large_finite_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "large_finite           scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "large_finite_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "large_finite           scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "max_finite_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "max_finite             scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "max_finite_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "max_finite             scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "max_finite_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "max_finite             scalar=ACCEPT simd=ACCEPT equal=YES PASS"
+        },
+        {
+          "name": "subnormal_only_scalar",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "subnormal_only         scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "subnormal_only_simd",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "subnormal_only         scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "subnormal_only_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "subnormal_only         scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "positive_infinity_scalar",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "positive_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "positive_infinity_simd",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "positive_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "positive_infinity_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "positive_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "negative_infinity_scalar",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "negative_infinity_simd",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "negative_infinity_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_infinity      scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "quiet_nan_scalar",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "quiet_nan              scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "quiet_nan_simd",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "quiet_nan              scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "quiet_nan_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "quiet_nan              scalar=REJECT simd=REJECT equal=YES PASS"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_finite_edges",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.465,
+      "metrics": [
+        {
+          "name": "all_zero_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "all_zero                 byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "all_zero_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "all_zero                 byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "tiny_normal_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "tiny_normal              byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "tiny_normal_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "tiny_normal              byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "large_finite_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "large_finite             byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "large_finite_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "large_finite             byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "mixed_sign_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "mixed_sign               byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "mixed_sign_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "mixed_sign               byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "near_zero_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "near_zero                byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "near_zero_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "near_zero                byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "rounding_boundaries_byte_equal",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "rounding_boundaries      byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "rounding_boundaries_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "rounding_boundaries      byte_equal=YES mismatches=0"
+        },
+        {
+          "name": "total_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Total mismatches: 0"
+        },
+        {
+          "name": "failed_categories",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Failed categories: 0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_nonfinite_edges",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.325,
+      "metrics": [
+        {
+          "name": "finite_expected",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "finite                   expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "finite_actual",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "finite                   expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "positive_infinity_expected",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "positive_infinity        expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "positive_infinity_actual",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "positive_infinity        expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "negative_infinity_expected",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_infinity        expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "negative_infinity_actual",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_infinity        expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "quiet_nan_expected",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "quiet_nan                expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "quiet_nan_actual",
+          "value": "REJECT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "quiet_nan                expected=REJECT actual=REJECT PASS"
+        },
+        {
+          "name": "negative_zero_expected",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_zero            expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "negative_zero_actual",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "negative_zero            expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "max_finite_expected",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "max_finite               expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "max_finite_actual",
+          "value": "VALID",
+          "numeric": false,
+          "unit": "",
+          "source_line": "max_finite               expected=VALID actual=VALID PASS"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_subnormal_edges",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.202,
+      "metrics": [
+        {
+          "name": "fp32_denorm_min",
+          "value": 1.401298464e-45,
+          "numeric": true,
+          "unit": "",
+          "source_line": "FP32 denorm_min: 1.401298464e-45"
+        },
+        {
+          "name": "fp32_min_normal",
+          "value": 1.175494351e-38,
+          "numeric": true,
+          "unit": "",
+          "source_line": "FP32 min_normal: 1.175494351e-38"
+        },
+        {
+          "name": "mixed_subnormal",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "mixed_subnormal: PASS"
+        },
+        {
+          "name": "near_scale_overflow_boundary",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "near_scale_overflow_boundary: PASS"
+        },
+        {
+          "name": "subnormal_only_probe_maximum",
+          "value": 1.401298464e-45,
+          "numeric": true,
+          "unit": "",
+          "source_line": "subnormal_only_probe: maximum=1.401298464e-45 inverse_scale=-inf finite=NO"
+        },
+        {
+          "name": "subnormal_only_probe_finite",
+          "value": "NO",
+          "numeric": false,
+          "unit": "",
+          "source_line": "subnormal_only_probe: maximum=1.401298464e-45 inverse_scale=-inf finite=NO"
+        },
+        {
+          "name": "mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Mismatches: 0"
+        },
+        {
+          "name": "unexpected_conditions",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Unexpected conditions: 0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_rounding_modes",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 134.706,
+      "metrics": [
+        {
+          "name": "nearest_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "nearest        mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "nearest_rejected",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "nearest        mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "nearest_restore_errors",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "nearest        mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "down_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "down           mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "down_rejected",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "down           mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "down_restore_errors",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "down           mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "up_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "up             mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "up_rejected",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "up             mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "up_restore_errors",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "up             mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "toward_zero_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "toward_zero    mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "toward_zero_rejected",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "toward_zero    mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "toward_zero_restore_errors",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "toward_zero    mismatches=0 rejected=0 restore_errors=0 / 10000"
+        },
+        {
+          "name": "total_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Total mismatches: 0"
+        },
+        {
+          "name": "total_rejected",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Total rejected: 0"
+        },
+        {
+          "name": "mxcsr_restoration_errors",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "MXCSR restoration errors: 0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_ftz_daz",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.484,
+      "metrics": [
+        {
+          "name": "ftz_off_daz_off_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_OFF      scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_off_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_OFF      scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_off_pair",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_OFF      scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_off_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_OFF      scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_off_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_OFF      scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_off_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_OFF       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_off_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_OFF       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_off_pair",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_OFF       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_off_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_OFF       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_off_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_OFF       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_on_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_ON       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_on_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_ON       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_on_pair",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_ON       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_on_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_ON       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_off_daz_on_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_OFF_DAZ_ON       scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_on_scalar",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_ON        scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_on_simd",
+          "value": "ACCEPT",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_ON        scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_on_pair",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_ON        scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_on_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_ON        scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "ftz_on_daz_on_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "FTZ_ON_DAZ_ON        scalar=ACCEPT simd=ACCEPT pair=YES baseline=YES restored=YES PASS"
+        },
+        {
+          "name": "failures",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Failures: 0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "q8g16_v2_stress",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 216.375,
+      "metrics": [
+        {
+          "name": "iterations",
+          "value": 100000,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Iterations: 100000"
+        },
+        {
+          "name": "zero_pattern_blocks",
+          "value": 14055,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Zero-pattern blocks: 14055"
+        },
+        {
+          "name": "avx2_available",
+          "value": "yes",
+          "numeric": false,
+          "unit": "",
+          "source_line": "AVX2 available: yes"
+        },
+        {
+          "name": "avx_vnni_available",
+          "value": "yes",
+          "numeric": false,
+          "unit": "",
+          "source_line": "AVX-VNNI available: yes"
+        },
+        {
+          "name": "mxcsr_rounding",
+          "value": "nearest",
+          "numeric": false,
+          "unit": "",
+          "source_line": "MXCSR rounding: nearest"
+        },
+        {
+          "name": "quantizer_byte_mismatches",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Quantizer byte mismatches: 0 / 100000"
+        },
+        {
+          "name": "quantizer_byte_mismatches_denominator",
+          "value": 100000,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Quantizer byte mismatches: 0 / 100000"
+        },
+        {
+          "name": "v1_vs_fp64_max_abs",
+          "value": 2.07085184e+19,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs FP64         max_abs=2.07085184e+19 max_rel=4.46015835e+09 RMSE=1.09701469e+17 NRMSE=1.24597622e-07 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_fp64_max_rel",
+          "value": 4460158350.0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs FP64         max_abs=2.07085184e+19 max_rel=4.46015835e+09 RMSE=1.09701469e+17 NRMSE=1.24597622e-07 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_fp64_rmse",
+          "value": 1.09701469e+17,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs FP64         max_abs=2.07085184e+19 max_rel=4.46015835e+09 RMSE=1.09701469e+17 NRMSE=1.24597622e-07 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_fp64_nrmse",
+          "value": 1.24597622e-07,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs FP64         max_abs=2.07085184e+19 max_rel=4.46015835e+09 RMSE=1.09701469e+17 NRMSE=1.24597622e-07 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_fp64_nonfinite",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs FP64         max_abs=2.07085184e+19 max_rel=4.46015835e+09 RMSE=1.09701469e+17 NRMSE=1.24597622e-07 nonfinite=0"
+        },
+        {
+          "name": "v2_vs_fp64_max_abs",
+          "value": 1.33323546e+19,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V2 vs FP64         max_abs=1.33323546e+19 max_rel=1.81710155e+09 RMSE=7.87866206e+16 NRMSE=8.94849056e-08 nonfinite=0"
+        },
+        {
+          "name": "v2_vs_fp64_max_rel",
+          "value": 1817101550.0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V2 vs FP64         max_abs=1.33323546e+19 max_rel=1.81710155e+09 RMSE=7.87866206e+16 NRMSE=8.94849056e-08 nonfinite=0"
+        },
+        {
+          "name": "v2_vs_fp64_rmse",
+          "value": 7.87866206e+16,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V2 vs FP64         max_abs=1.33323546e+19 max_rel=1.81710155e+09 RMSE=7.87866206e+16 NRMSE=8.94849056e-08 nonfinite=0"
+        },
+        {
+          "name": "v2_vs_fp64_nrmse",
+          "value": 8.94849056e-08,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V2 vs FP64         max_abs=1.33323546e+19 max_rel=1.81710155e+09 RMSE=7.87866206e+16 NRMSE=8.94849056e-08 nonfinite=0"
+        },
+        {
+          "name": "v2_vs_fp64_nonfinite",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V2 vs FP64         max_abs=1.33323546e+19 max_rel=1.81710155e+09 RMSE=7.87866206e+16 NRMSE=8.94849056e-08 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_v2_max_abs",
+          "value": 9.22337204e+18,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs V2           max_abs=9.22337204e+18 max_rel=2.2 RMSE=7.76946764e+16 NRMSE=8.8244688e-08 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_v2_max_rel",
+          "value": 2.2,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs V2           max_abs=9.22337204e+18 max_rel=2.2 RMSE=7.76946764e+16 NRMSE=8.8244688e-08 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_v2_rmse",
+          "value": 7.76946764e+16,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs V2           max_abs=9.22337204e+18 max_rel=2.2 RMSE=7.76946764e+16 NRMSE=8.8244688e-08 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_v2_nrmse",
+          "value": 8.8244688e-08,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs V2           max_abs=9.22337204e+18 max_rel=2.2 RMSE=7.76946764e+16 NRMSE=8.8244688e-08 nonfinite=0"
+        },
+        {
+          "name": "v1_vs_v2_nonfinite",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "V1 vs V2           max_abs=9.22337204e+18 max_rel=2.2 RMSE=7.76946764e+16 NRMSE=8.8244688e-08 nonfinite=0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    },
+    {
+      "name": "diagnose_q8g16_rounding",
+      "status": "PASS",
+      "exit_code": 0,
+      "duration_ms": 1.219,
+      "metrics": [
+        {
+          "name": "nearest_scalar_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "nearest        scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "nearest_simd_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "nearest        scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "nearest_scalar_simd",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "nearest        scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "nearest_mxcsr_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "nearest        scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "down_scalar_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "down           scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "down_simd_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "down           scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "down_scalar_simd",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "down           scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "down_mxcsr_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "down           scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "up_scalar_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "up             scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "up_simd_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "up             scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "up_scalar_simd",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "up             scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "up_mxcsr_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "up             scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "toward_zero_scalar_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "toward_zero    scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "toward_zero_simd_baseline",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "toward_zero    scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "toward_zero_scalar_simd",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "toward_zero    scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "toward_zero_mxcsr_restored",
+          "value": "YES",
+          "numeric": false,
+          "unit": "",
+          "source_line": "toward_zero    scalar_baseline=YES simd_baseline=YES scalar_simd=YES mxcsr_restored=YES"
+        },
+        {
+          "name": "total_parity_failures",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "Total parity failures: 0"
+        },
+        {
+          "name": "mxcsr_restoration_failures",
+          "value": 0,
+          "numeric": true,
+          "unit": "",
+          "source_line": "MXCSR restoration failures: 0"
+        },
+        {
+          "name": "result",
+          "value": "PASS",
+          "numeric": false,
+          "unit": "",
+          "source_line": "RESULT: PASS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Given a list of integers, return the k most frequent elements. If frequencies are tied, order tied elements by their first appearance in the input. Explain the data structures and complexity.
+Given a list of words, group together words that are anagrams of each other. Preserve the order of first appearance of each group and the order of words within each group. Explain your hashing strategy and complexity.
+Given an integer array, determine whether two distinct elements sum to a target value. Return their indices or an empty result if no pair exists. Explain how a hash map solves the problem and analyze complexity.
+Given a list of integers, find the longest consecutive sequence of distinct integer values, regardless of their input order. Return its length in O(n) expected time and explain the role of a set.
+Given a string, determine whether any permutation of its characters can form a palindrome. Explain the frequency-counting condition and analyze time and space complexity.
+Given two integer arrays, return their multiset intersection, including repeated values up to the minimum frequency in both arrays. Preserve the order of appearance from the first array and explain the counting approach.
+Given a list of transactions represented as (user_id, amount), find the user with the highest total amount. In a tie, choose the user whose first transaction appeared earliest. Explain the aggregation and tie-breaking logic.

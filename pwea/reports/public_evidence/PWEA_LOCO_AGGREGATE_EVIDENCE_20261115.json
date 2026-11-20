@@ -1,0 +1,419 @@
+{
+  "title": "PWEA Five-Category LOCO Evaluation \u2014 Aggregate Evidence",
+  "project": "CONTRA-X_INFERENCE_ENGINE",
+  "research_component": "PWEA",
+  "report_date": "2026-11-15",
+  "dataset_summary": {
+    "sessions": 25,
+    "prompts": 175,
+    "categories": 5,
+    "activation_events": 28428288,
+    "integrity_errors": 0,
+    "generation_cap_hits": 20,
+    "generation_cap_category": "algorithmic-problem-solving"
+  },
+  "evaluations": {
+    "session_level_corrected": {
+      "evaluation": "leave-one-task-category-out",
+      "model": {
+        "model_id": "qwen3-coder-30b-a3b-instruct-ud-q5-k-xl",
+        "n_expert": 128,
+        "n_layer": 48
+      },
+      "protocol": {
+        "framework": "none",
+        "language": "Python",
+        "minimum_sessions_per_category": 3,
+        "minimum_training_prompts": 20,
+        "minimum_training_sessions": 3,
+        "workload_phase": "inference"
+      },
+      "aggregation": null,
+      "limitations": [],
+      "test_unit": null,
+      "total_test_prompts": null,
+      "fold_count": 5,
+      "category_count": 5,
+      "categories": [
+        "code-generation",
+        "debugging",
+        "code-explanation",
+        "code-transformation",
+        "algorithmic-problem-solving"
+      ],
+      "expert_count": 128,
+      "layer_count": 48,
+      "overall": {
+        "pwea": {
+          "ndcg_at_k": 0.7843087849582562
+        },
+        "frequency_baseline": {
+          "ndcg_at_k": 0.7362626962849385
+        }
+      },
+      "folds": [
+        {
+          "held_out_category": "code-generation",
+          "pwea": {
+            "ndcg_at_k": 0.7623193417014432
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7519334598117249
+          }
+        },
+        {
+          "held_out_category": "debugging",
+          "pwea": {
+            "ndcg_at_k": 0.8471934794222516
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7619996962182725
+          }
+        },
+        {
+          "held_out_category": "code-explanation",
+          "pwea": {
+            "ndcg_at_k": 0.7863207151284753
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7455102750719317
+          }
+        },
+        {
+          "held_out_category": "code-transformation",
+          "pwea": {
+            "ndcg_at_k": 0.8489447977768398
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7391644753394074
+          }
+        },
+        {
+          "held_out_category": "algorithmic-problem-solving",
+          "pwea": {
+            "ndcg_at_k": 0.676765590762271
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6827055749833558
+          }
+        }
+      ]
+    },
+    "prompt_level_corrected": {
+      "evaluation": "leave-one-task-category-out-prompt-level",
+      "model": {
+        "model_id": "qwen3-coder-30b-a3b-instruct-ud-q5-k-xl",
+        "n_expert": 128,
+        "n_layer": 48
+      },
+      "protocol": {
+        "framework": "none",
+        "heldout_prompts_per_fold": 35,
+        "heldout_sessions_per_fold": 5,
+        "language": "Python",
+        "minimum_training_prompts": 20,
+        "minimum_training_sessions": 3,
+        "prompts": 175,
+        "prompts_per_session": 7,
+        "sessions": 25,
+        "sessions_per_category": 5,
+        "training_categories_per_fold": 4,
+        "training_prompts_per_fold": 140,
+        "training_sessions_per_fold": 20,
+        "workload_phase": "inference"
+      },
+      "aggregation": "macro-average across categories; equal-weight prompts within each category",
+      "limitations": [
+        "Prompts within a session may be correlated; prompt results are not necessarily statistically independent.",
+        "Algorithmic problem-solving contains generation-censored outputs from the original collection.",
+        "This experiment evaluates expert-demand prediction, not memory placement or inference latency."
+      ],
+      "test_unit": "one individual prompt record",
+      "total_test_prompts": 175,
+      "fold_count": 5,
+      "category_count": 5,
+      "categories": [
+        "code-generation",
+        "debugging",
+        "code-explanation",
+        "code-transformation",
+        "algorithmic-problem-solving"
+      ],
+      "expert_count": 128,
+      "layer_count": 48,
+      "overall": {
+        "pwea": {
+          "ndcg_at_k": 0.73486884047437
+        },
+        "frequency_baseline": {
+          "ndcg_at_k": 0.6899704201672054
+        }
+      },
+      "folds": [
+        {
+          "held_out_category": "code-generation",
+          "pwea": {
+            "ndcg_at_k": 0.7209366457062872
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7101199158053558
+          }
+        },
+        {
+          "held_out_category": "debugging",
+          "pwea": {
+            "ndcg_at_k": 0.8038259374054142
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7237673143575678
+          }
+        },
+        {
+          "held_out_category": "code-explanation",
+          "pwea": {
+            "ndcg_at_k": 0.7241959760462022
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6866737646722113
+          }
+        },
+        {
+          "held_out_category": "code-transformation",
+          "pwea": {
+            "ndcg_at_k": 0.7887927450378674
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6875800967703247
+          }
+        },
+        {
+          "held_out_category": "algorithmic-problem-solving",
+          "pwea": {
+            "ndcg_at_k": 0.6365928981760789
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.641711009230568
+          }
+        }
+      ]
+    },
+    "session_level_tie_aware": {
+      "evaluation": "leave-one-task-category-out",
+      "model": {
+        "model_id": "qwen3-coder-30b-a3b-instruct-ud-q5-k-xl",
+        "n_expert": 128,
+        "n_layer": 48
+      },
+      "protocol": {
+        "framework": "none",
+        "language": "Python",
+        "minimum_sessions_per_category": 3,
+        "minimum_training_prompts": 20,
+        "minimum_training_sessions": 3,
+        "workload_phase": "inference"
+      },
+      "aggregation": null,
+      "limitations": [],
+      "test_unit": null,
+      "total_test_prompts": null,
+      "fold_count": 5,
+      "category_count": 5,
+      "categories": [
+        "code-generation",
+        "debugging",
+        "code-explanation",
+        "code-transformation",
+        "algorithmic-problem-solving"
+      ],
+      "expert_count": 128,
+      "layer_count": 48,
+      "overall": {
+        "pwea": {
+          "ndcg_at_k": 0.7843087849582562,
+          "tie_aware_ndcg_at_k": 0.7843087849582563
+        },
+        "frequency_baseline": {
+          "ndcg_at_k": 0.7362626962849385,
+          "tie_aware_ndcg_at_k": 0.7362626962849385
+        }
+      },
+      "folds": [
+        {
+          "held_out_category": "code-generation",
+          "pwea": {
+            "ndcg_at_k": 0.7623193417014432,
+            "tie_aware_ndcg_at_k": 0.7623193417014432
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7519334598117249,
+            "tie_aware_ndcg_at_k": 0.7519334598117249
+          }
+        },
+        {
+          "held_out_category": "debugging",
+          "pwea": {
+            "ndcg_at_k": 0.8471934794222516,
+            "tie_aware_ndcg_at_k": 0.8471934794222516
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7619996962182725,
+            "tie_aware_ndcg_at_k": 0.7619996962182725
+          }
+        },
+        {
+          "held_out_category": "code-explanation",
+          "pwea": {
+            "ndcg_at_k": 0.7863207151284753,
+            "tie_aware_ndcg_at_k": 0.7863207151284755
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7455102750719317,
+            "tie_aware_ndcg_at_k": 0.7455102750719318
+          }
+        },
+        {
+          "held_out_category": "code-transformation",
+          "pwea": {
+            "ndcg_at_k": 0.8489447977768398,
+            "tie_aware_ndcg_at_k": 0.8489447977768398
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7391644753394074,
+            "tie_aware_ndcg_at_k": 0.7391644753394075
+          }
+        },
+        {
+          "held_out_category": "algorithmic-problem-solving",
+          "pwea": {
+            "ndcg_at_k": 0.676765590762271,
+            "tie_aware_ndcg_at_k": 0.6767655907622712
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6827055749833558,
+            "tie_aware_ndcg_at_k": 0.6827055749833558
+          }
+        }
+      ]
+    },
+    "prompt_level_tie_aware": {
+      "evaluation": "leave-one-task-category-out-prompt-level",
+      "model": {
+        "model_id": "qwen3-coder-30b-a3b-instruct-ud-q5-k-xl",
+        "n_expert": 128,
+        "n_layer": 48
+      },
+      "protocol": {
+        "framework": "none",
+        "heldout_prompts_per_fold": 35,
+        "heldout_sessions_per_fold": 5,
+        "language": "Python",
+        "minimum_training_prompts": 20,
+        "minimum_training_sessions": 3,
+        "prompts": 175,
+        "prompts_per_session": 7,
+        "sessions": 25,
+        "sessions_per_category": 5,
+        "training_categories_per_fold": 4,
+        "training_prompts_per_fold": 140,
+        "training_sessions_per_fold": 20,
+        "workload_phase": "inference"
+      },
+      "aggregation": "macro-average across categories; equal-weight prompts within each category",
+      "limitations": [
+        "Prompts within a session may be correlated; prompt results are not necessarily statistically independent.",
+        "Algorithmic problem-solving contains generation-censored outputs from the original collection.",
+        "This experiment evaluates expert-demand prediction, not memory placement or inference latency."
+      ],
+      "test_unit": "one individual prompt record",
+      "total_test_prompts": 175,
+      "fold_count": 5,
+      "category_count": 5,
+      "categories": [
+        "code-generation",
+        "debugging",
+        "code-explanation",
+        "code-transformation",
+        "algorithmic-problem-solving"
+      ],
+      "expert_count": 128,
+      "layer_count": 48,
+      "overall": {
+        "pwea": {
+          "ndcg_at_k": 0.73486884047437,
+          "tie_aware_ndcg_at_k": 0.73486884047437
+        },
+        "frequency_baseline": {
+          "ndcg_at_k": 0.6899704201672054,
+          "tie_aware_ndcg_at_k": 0.6899704201672054
+        }
+      },
+      "folds": [
+        {
+          "held_out_category": "code-generation",
+          "pwea": {
+            "ndcg_at_k": 0.7209366457062872,
+            "tie_aware_ndcg_at_k": 0.7209366457062872
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7101199158053558,
+            "tie_aware_ndcg_at_k": 0.7101199158053558
+          }
+        },
+        {
+          "held_out_category": "debugging",
+          "pwea": {
+            "ndcg_at_k": 0.8038259374054142,
+            "tie_aware_ndcg_at_k": 0.8038259374054142
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.7237673143575678,
+            "tie_aware_ndcg_at_k": 0.7237673143575678
+          }
+        },
+        {
+          "held_out_category": "code-explanation",
+          "pwea": {
+            "ndcg_at_k": 0.7241959760462022,
+            "tie_aware_ndcg_at_k": 0.7241959760462022
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6866737646722113,
+            "tie_aware_ndcg_at_k": 0.6866737646722113
+          }
+        },
+        {
+          "held_out_category": "code-transformation",
+          "pwea": {
+            "ndcg_at_k": 0.7887927450378674,
+            "tie_aware_ndcg_at_k": 0.7887927450378674
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.6875800967703247,
+            "tie_aware_ndcg_at_k": 0.6875800967703247
+          }
+        },
+        {
+          "held_out_category": "algorithmic-problem-solving",
+          "pwea": {
+            "ndcg_at_k": 0.6365928981760789,
+            "tie_aware_ndcg_at_k": 0.6365928981760789
+          },
+          "frequency_baseline": {
+            "ndcg_at_k": 0.641711009230568,
+            "tie_aware_ndcg_at_k": 0.641711009230568
+          }
+        }
+      ]
+    }
+  },
+  "publication_note": "This file contains aggregate evaluation evidence. Session identifiers, workload identifiers, source paths, per-session hashes and private source-file references have deliberately been omitted.",
+  "interpretation_limitations": [
+    "The cohort contains five sessions per category.",
+    "Prompts within a session may be correlated.",
+    "Twenty algorithmic problem-solving outputs reached the generation cap.",
+    "The experiments use the simulation backend.",
+    "The results evaluate expert-ranking quality, not actual memory placement.",
+    "No statistical significance or independent replication is established.",
+    "The results do not demonstrate inference latency improvements."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "experiment": "python_code_explanation_distinct_suites",
+  "category": "code-explanation",
+  "suite_count": 5,
+  "prompts_per_suite": 7,
+  "suites": {
+    "a": {
+      "file": "pwea/prompts/python_code_explanation_suite_a.txt",
+      "prompt_count": 7,
+      "sha256": "a822bc01889cfdd514ac4f4334fe7b30cb42616ac2ea3adb75483c58d9ecd785"
+    },
+    "b": {
+      "file": "pwea/prompts/python_code_explanation_suite_b.txt",
+      "prompt_count": 7,
+      "sha256": "d959f709ac1e9627e32ebd8c8ad8fbdb7f4f55fd6b71252d76fcd7be613acb7b"
+    },
+    "c": {
+      "file": "pwea/prompts/python_code_explanation_suite_c.txt",
+      "prompt_count": 7,
+      "sha256": "ce69bd714d1ad9404fa367d84ecd87da05f513bf60aa111aa0bed839642636a0"
+    },
+    "d": {
+      "file": "pwea/prompts/python_code_explanation_suite_d.txt",
+      "prompt_count": 7,
+      "sha256": "9e6c4e1d96997005bc053ddded56ba081e1639dc6c94fc121e4e5af52c6e3722"
+    },
+    "e": {
+      "file": "pwea/prompts/python_code_explanation_suite_e.txt",
+      "prompt_count": 7,
+      "sha256": "1bf54db5dfdfc680417dafb489c30cba86b6c9dc8a5b28e0f3332943f7a1da51"
+    }
+  }
+}

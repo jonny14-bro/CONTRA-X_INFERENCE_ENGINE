@@ -1,0 +1,7 @@
+Given a string containing brackets (), [], and {}, determine whether the brackets are balanced and correctly nested. Explain the stack operations and analyze time and space complexity.
+Implement a queue using two stacks with enqueue and dequeue operations. Explain why the transfer between stacks works and analyze amortized operation complexity.
+Given an array of daily temperatures, return for each day how many days must pass until a warmer temperature occurs. Return zero when no warmer day exists. Explain the monotonic stack approach and complexity.
+Given a list of intervals representing occupied time ranges, determine whether any intervals overlap. Treat intervals as half-open [start,end) and explain how touching endpoints are handled.
+Design a stack supporting push, pop, top, and retrieving the minimum element, with each operation taking O(1) time. Explain the additional state required.
+Given a sequence of integers and a window size k, return the maximum value in every contiguous window of size k in O(n) time. Explain how a deque maintains useful indices.
+Given a sequence of characters, simplify a filesystem path containing '.', '..', and repeated slashes. Explain how a stack represents directory traversal and handle attempts to move above the root.

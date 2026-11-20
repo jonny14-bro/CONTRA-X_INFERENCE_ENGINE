@@ -1,0 +1,4 @@
+# Python 3.14.8 — versions verified in the development environment
+numpy==2.4.6
+gguf==0.19.0
+regex==2026.9.10

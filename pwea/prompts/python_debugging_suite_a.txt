@@ -1,0 +1,7 @@
+Debug this function: def last_item(items): return items[len(items)]. It should return the final item. Explain the bug and provide corrected code.
+Debug this function: def average(nums): return sum(nums) / len(nums). It must handle an empty list safely. Explain and fix it.
+Debug this function: def unique(items): return list(set(items)). It must preserve the original order of first occurrences. Explain and fix it.
+Debug this function: def find_user(users, target): return [u for u in users if u['id'] is target]. It must compare identifier values correctly. Explain and fix it.
+Debug this function: def merge(a, b): a.update(b); return a. It must merge dictionaries without modifying either input. Explain and fix it.
+Debug this function: def read_text(path): return open(path).read(). It must close the file reliably, including when reading fails. Explain and fix it.
+Debug this function: def is_sorted(xs): return all(xs[i] < xs[i+1] for i in range(len(xs)-1)). It should accept equal adjacent values. Explain and fix it.

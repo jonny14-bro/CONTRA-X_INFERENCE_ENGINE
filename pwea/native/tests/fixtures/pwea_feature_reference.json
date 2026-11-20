@@ -1,0 +1,81 @@
+{
+  "format": "PWEAFEAT",
+  "feature_variant": "balanced_hybrid",
+  "feature_dimensions": 32768,
+  "word_dimensions": 16384,
+  "character_dimensions": 16384,
+  "cases": [
+    {
+      "name": "ascii",
+      "prompt": "Hello world, this is a PWEA test.",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865475,
+      "char_norm": 0.7071067811865475,
+      "sha256": "b74bf6b21c52ba9fa9ff29348948482aa62a980be7c8914d466a1bdae3d70886"
+    },
+    {
+      "name": "unicode_latin",
+      "prompt": "Café naïve Straße İstanbul",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865476,
+      "char_norm": 0.7071067811865476,
+      "sha256": "a4d08077139962ab5448ef83d64e4693dafef90206ed08e2b8e014089ed997d7"
+    },
+    {
+      "name": "greek",
+      "prompt": "ΟΣ ΟΣΑ ΜΆΙΟΣ",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865475,
+      "char_norm": 0.7071067811865476,
+      "sha256": "d7c284465a8edf268582ea010149b7761e2473ebdbb95b7d97202f33bff3d994"
+    },
+    {
+      "name": "indic",
+      "prompt": "नमस्ते दुनिया ಕನ್ನಡ ಭಾಷೆ",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865475,
+      "char_norm": 0.7071067811865475,
+      "sha256": "797b502fa9f01d4749f23571e75d8b338d2ac1b131a17465788fba66f8f089dd"
+    },
+    {
+      "name": "punctuation",
+      "prompt": "C++: feature-hashing, n-grams! (test_123)",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865475,
+      "char_norm": 0.7071067811865475,
+      "sha256": "6d99f0e2d83bc9d9f4701b99782c277f3da7ea6299e780ca2b3bf98f7e86db0f"
+    },
+    {
+      "name": "whitespace",
+      "prompt": "  multiple\tspaces\nand unicode spaces  ",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865475,
+      "char_norm": 0.7071067811865475,
+      "sha256": "466b56bc30feb4560fec360d02fda59c4d9ccc4ab9b0a8529676451ce1d960d4"
+    },
+    {
+      "name": "mixed",
+      "prompt": "AI/ML expert routing: Layer 48, Expert 127.",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865476,
+      "char_norm": 0.7071067811865475,
+      "sha256": "d46698f33b740f6d93ecfeb6273ad176196313a68578cb5b50a25db3bca23a0e"
+    },
+    {
+      "name": "empty_like",
+      "prompt": "   punctuation !!! ___ 123 ",
+      "dimensions": 32768,
+      "dtype": "float64-le",
+      "word_norm": 0.7071067811865472,
+      "char_norm": 0.7071067811865474,
+      "sha256": "ee93bda5851a49341e8566f8362934272d7c566c6d6c8e0d48ebc933f55ddff9"
+    }
+  ]
+}

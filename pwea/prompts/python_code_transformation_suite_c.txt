@@ -1,0 +1,7 @@
+Transform this function so it does not mutate the input list and instead returns a new list with the same values followed by the new item: def add_item(items,item): items.append(item); return items.
+Transform this function into an immutable-style implementation that returns a new dictionary rather than changing the input dictionary: def set_status(data,status): data['status']=status; return data.
+Transform this function so nested dictionaries are copied before the nested value is changed, ensuring the original input remains unchanged: def set_theme(settings,theme): settings['display']['theme']=theme; return settings.
+Transform this function into a tuple-based implementation that preserves the original order and returns a new sequence with the requested value appended: def append_value(items,value): items.append(value); return items.
+Transform this function so it removes all matching values without modifying the caller's list. Interpret each \n as a real line break in the Python code: def remove_all(items, target):\n    result = []\n    for item in items:\n        if item != target:\n            result.append(item)\n    return result\n[END CODE].
+Transform this function into a pure implementation that returns a new dictionary with the updated counter and leaves the original unchanged: def increment(state,key): state[key]=state.get(key,0)+1; return state.
+Transform this function into an immutable-style implementation that sorts the values without changing the input list: def sorted_values(items): items.sort(); return items.

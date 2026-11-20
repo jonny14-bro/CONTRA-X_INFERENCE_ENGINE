@@ -1,0 +1,7 @@
+Debug this function: def common_prefix(words): return min(words). It must return the longest prefix shared by every word and handle an empty list. Explain and fix it.
+Debug this function: def rotate(items, k): return items[k:] + items[:k]. It must also work correctly for negative and very large rotation counts. Explain and fix it.
+Debug this function: def validate_age(age): return 0 <= age <= 120. It must reject booleans and non-integer values as well. Explain and fix it.
+Debug this function: def sum_nested(data): return sum(data). The input is a list of lists of integers. Explain why it fails and provide a correct implementation.
+Debug this function: def update_inventory(stock, item, quantity): stock[item] = quantity; return stock. It should add quantity to the existing stock instead of replacing it. Explain and fix it.
+Debug this function: def is_subset(a, b): return all(x in a for x in b). It should test whether every element of a is present in b. Explain and fix it.
+Debug this function: def read_first_line(path): return open(path).readlines()[0]. It must handle an empty file and close the file reliably. Explain and fix it.

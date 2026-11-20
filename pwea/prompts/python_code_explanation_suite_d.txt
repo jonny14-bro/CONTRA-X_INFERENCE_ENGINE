@@ -1,0 +1,7 @@
+Explain how a list comprehension evaluates its expression and filter: def transform(nums): return [n*n for n in nums if n % 2 == 0]. Trace it for [1,2,3,4,5,6].
+Explain how generator expressions differ from list comprehensions in evaluation and memory behavior: def compare(nums): a=[n*n for n in nums]; b=(n*n for n in nums); return a,b. Describe when the values are computed.
+Explain how yield changes a function into a generator. Interpret each \n as a real line break in the Python code: def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n[END CODE]. Trace the values produced by list(countdown(3)).
+Explain how enumerate and zip work together in this function: def pair_names(names, scores): return [(i,name,score) for i,(name,score) in enumerate(zip(names,scores))]. Trace it for names=['Ana','Bo'] and scores=[80,90].
+Explain how filter and map process an iterable in this function: def process(nums): return list(map(lambda x: x*2, filter(lambda x: x>0, nums))). Trace it for [-2,0,3,5].
+Explain why this generator can only be exhausted once: def values(): yield 1; yield 2; yield 3. Describe the results of calling list(g) twice when g=values().
+Explain how a generator pipeline passes values between stages. Interpret each \n as a real line break in the Python code: def squares(nums):\n    for n in nums:\n        yield n * n\ndef positives(nums):\n    for n in nums:\n        if n > 0:\n            yield n\n[END CODE]. Trace list(positives(squares([-2, 0, 3]))) and explain the order of evaluation.

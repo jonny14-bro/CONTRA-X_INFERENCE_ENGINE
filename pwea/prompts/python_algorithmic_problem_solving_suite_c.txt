@@ -1,0 +1,7 @@
+Given a sorted array that may contain duplicate values, find the first and last index of a target using O(log n) time. Return [-1,-1] when the target is absent. Explain the two binary searches.
+Given a sorted array of distinct integers that has been rotated at an unknown pivot, find a target in O(log n) time. Explain how to identify the sorted half at each step.
+Given an unsorted array of integers, find the kth largest element without fully sorting the array. Describe a quickselect-based solution, explain its partition strategy, and state average and worst-case complexity.
+Given a list of meeting intervals, determine the minimum number of rooms required so that no overlapping meetings share a room. Explain an efficient sorting and heap-based solution and analyze complexity.
+Given a list of integers and a target, find the insertion position of the target in a sorted version of the array using binary search without actually sorting the input. State the required input assumption and complexity.
+Given a collection of intervals, merge all overlapping intervals and return the resulting non-overlapping intervals in sorted order. Explain how touching endpoints are handled and analyze complexity.
+Given a list of integers, sort the values using merge sort. Explain the divide-and-conquer process, demonstrate the result for [8,3,5,1,9,2], and analyze time and auxiliary space complexity.

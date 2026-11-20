@@ -1,0 +1,7 @@
+Given an integer array, find the maximum sum of any contiguous subarray. Return both the maximum sum and the start and end indices. Handle an empty array explicitly and explain the time and space complexity.
+Given a string, find the length of the longest substring containing no repeated characters. Return zero for an empty string. Explain the algorithm and its time and space complexity.
+Given an array of integers and a target value, return all unique triplets whose sum equals the target. Do not return duplicate triplets. Explain how your algorithm avoids duplicates and analyze its complexity.
+Given an array of integers, rotate it to the right by k positions in place. Support negative and very large values of k. Explain the algorithm and its complexity.
+Given two sorted integer arrays, merge them into one sorted array without using a built-in sorting function. Explain how the algorithm handles duplicate values and analyze its complexity.
+Given a string containing letters and spaces, find the first character that appears exactly once and return its index. Return -1 if no such character exists. Explain your approach and complexity.
+Given an array of integers, find the smallest missing positive integer in O(n) time and O(1) auxiliary space. Explain the placement strategy and handle duplicates and negative values.

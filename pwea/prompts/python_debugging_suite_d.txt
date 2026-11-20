@@ -1,0 +1,7 @@
+Debug this function: def sum_even(nums): return sum(n for n in nums if n % 2). It should sum only even integers. Explain and fix it.
+Debug this function: def normalize(value): return value.strip().lower. It should return a lowercase trimmed string. Explain and fix it.
+Debug this function: def load_json(path): return json.load(path). It receives a filesystem path, not an open file object. Explain and fix it, including proper file handling.
+Debug this function: def has_key(data, key): return key in data.values(). It should test whether the dictionary contains the given key. Explain and fix it.
+Debug this function: def median(nums): return sorted(nums)[len(nums)//2]. It returns the wrong result for even-length input. Explain and fix it, including empty input handling.
+Debug this function: def divide(a, b): return a / b. It must raise a clear ValueError when b is zero rather than exposing a ZeroDivisionError. Explain and fix it.
+Debug this function: def copy_settings(settings): result = settings; result['theme'] = 'dark'; return result. It must not modify the caller's dictionary. Explain and fix it.

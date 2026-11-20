@@ -1,0 +1,7 @@
+Debug this function: def is_palindrome(value): return value == value.reverse(). It should work with strings and return a boolean. Explain and fix it.
+Debug this function: def transpose(matrix): return list(zip(*matrix)). Rows may have different lengths, and the function must reject malformed matrices rather than silently lose values. Explain and fix it.
+Debug this function: def get_name(user): return user['profile']['name']. It must safely handle a missing profile or name and return 'Unknown'. Explain and fix it.
+Debug this function: def intersect(a, b): return [x for x in a if x in b]. It must return each common value only once while preserving the order from a. Explain and fix it.
+Debug this function: def add_tax(price, rate): return price + rate. The rate is a decimal fraction, such as 0.18, and the function must return the price including tax. Explain and fix it.
+Debug this function: def paginate(items, page, size): return items[page*size:(page+1)*size]. It must reject negative page numbers and non-positive page sizes. Explain and fix it.
+Debug this function: def longest_word(text): return max(text.split(), key=len). It must return an empty string for input containing no words. Explain and fix it.

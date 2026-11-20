@@ -1,0 +1,7 @@
+Debug this function: def chunks(items, n): return [items[i:i+n] for i in range(0, len(items), n)]. It must reject a non-positive chunk size clearly. Explain and fix it.
+Debug this function: def remove_negatives(xs): [xs.remove(x) for x in xs if x < 0]; return xs. The function mutates the list while iterating and skips some adjacent negative values. Explain and fix it.
+Debug this function: def count_words(text): return len(text.split(' ')). It must count words correctly when whitespace is repeated or tabs are present. Explain and fix it.
+Debug this function: def safe_get(data, key): return data.get(key) or 'unknown'. It must preserve valid values such as zero, false, and an empty string. Explain and fix it.
+Debug this function: def second_largest(nums): return sorted(nums)[-2]. It must return the second distinct largest value and handle insufficient distinct values. Explain and fix it.
+Debug this function: def percentage(part, total): return part / total * 100. It must handle a zero total without crashing. Explain and fix it.
+Debug this function: def sort_records(records): return records.sort(key=lambda r: r['score']). The caller receives None instead of sorted records. Explain and fix it.
